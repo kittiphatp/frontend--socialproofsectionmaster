@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+
+    <!-- Import Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Open+Sans&family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {font-size: 15px; font-family: 'League Spartan';}
+
+      .container {width: 1200px; margin: 114px auto 20px auto;}
+
+
+      /* header -> group of container topic and container star */
+      header {display: flex; justify-content: space-between; margin-bottom: 80px;}
+
+      /* container topic */
+      .container-topic {width: 414px; height: 230px;}
+      .topic-header {font-size: 3.5em; font-weight: 700; color: hsl(300, 43%, 22%); margin: 0;}
+      article {font-size: 1.2em; color: hsl(303, 10%, 53%); margin-top: 28px;}
+
+      /* container star */
+      .container-star {width: 542px;  height: 230px;}
+      .star-reviews, .star-guru, .star-tech {width: 443px; height: 55px; background-color: hsl(300, 24%, 96%); border-radius: 10px; margin-bottom: 16px; display: flex; justify-content: flex-start; align-items: center;}
+      .star-icon {margin-left: 28px;}
+      .star-reviews-topic, .star-guru-topic, .star-tech-topic {margin-left: 33px; font-weight: 800; color: hsl(300, 43%, 22%); font-size: 1.1em;}
+
+      .star-guru {margin-left: 44px;}
+      .star-tech {margin-left: 96px;}
+
+
+      /* main */
+      main {width: 100%; display: flex;}
+      .person {width: 350px; height: 235px; border-radius: 5px; background-color: hsl(300, 43%, 22%); color: white; font-size: 1em; margin-right: 30px;}
+      .profile {width: 165px; margin-left: 28px; margin-top: 37px; display: flex; justify-content: space-between; align-items: center;}
+      .profile-avatar > img { border-radius: 50%; width: 45px; }
+      .name {line-height: 1.6; font-weight: 800;}
+      .verified {color: hsl(333, 80%, 67%);}
+      .comment {width: 290px; margin-left: 28px; margin-top: 30px; line-height: 1.3;}
+
+
+      .person:nth-child(2) { margin-top: 16px;}
+      .person:nth-child(3) { margin-top: 32px;}
+
+      .attribution {
+        position: relative;
+        bottom: 0;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+
+      @media screen and (max-width: 375px) {
+        .container {width: 100%;}
+        .container-topic {width: 100%;}
+        header {display: flex; flex-direction: column; text-align: center; margin-bottom: 20px;}
+        .topic-header { font-size: 3em;}
+
+        .container-star {width: 100%; margin-top: 10px; display: flex; flex-direction: column; align-items: center;}
+        .star-reviews, .star-guru, .star-tech {width: 320px; height: 55px; display: flex; flex-direction: column; justify-content: center;}
+        .star-guru, .star-tech {margin-left: 0;}
+
+
+        main {width: 100%; display: flex; flex-direction: column; align-items: center;}
+        .person {width: 320px; margin: 0;}
+        .person:nth-child(2), .person:nth-child(3) { margin-top: 10px;}
+        .comment {width: 250px;}
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <!-- topic -->
+        <div class="container-topic">
+          <p class="topic-header">
+            10,000+ of our users love our products.
+          </p>
+          <article>
+            We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.
+          </article>
+        </div>
+        <!-- Rated 5 stars -->
+        <div class="container-star">
+          <div class="star-reviews">
+            <span class="star-icon">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+            </span>
+            <span class="star-reviews-topic">Rated 5 Stars in Reviews</span>
+          </div>
+          <div class="star-guru">
+            <span class="star-icon">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+            </span>
+            <span class="star-guru-topic">Rated 5 Stars in Report Guru</span>
+          </div>
+          <div class="star-tech">
+            <span class="star-icon">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+              <img src="./images/icon-star.svg" alt="star">
+            </span>
+            <span class="star-tech-topic">Rated 5 Stars in BestTech</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- Colton Simth -->
+        <div class="person">
+          <!-- profile -->
+          <div class="profile">
+            <div class="profile-avatar">
+              <img src="./images/image-colton.jpg" alt="avatar-colton">
+            </div>
+            <div class="profile-desc">
+              <div class="name">Colton Smith</div>
+              <div class="verified">Verified Buyer</div>
+            </div>
+          </div>
+          <!-- comment of person -->
+          <div class="comment">
+            "We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"
+          </div>
+        </div>
+
+        <!-- Irene Roberts -->
+        <div class="person">
+          <!-- profile -->
+          <div class="profile">
+            <div class="profile-avatar">
+              <img src="./images/image-irene.jpg" alt="avatar-irene">
+            </div>
+            <div class="profile-desc">
+              <div class="name">Irene Roberts</div>
+              <div class="verified">Verified Buyer</div>
+            </div>
+          </div>
+          <!-- comment of person -->
+          <div class="comment">
+            "Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."
+          </div>
+        </div>
+
+        <!-- Anne Wallace -->
+        <div class="person">
+          <!-- profile -->
+          <div class="profile">
+            <div class="profile-avatar">
+              <img src="./images/image-anne.jpg" alt="avatar-anne">
+            </div>
+            <div class="profile-desc">
+              <div class="name">Anne Wallace</div>
+              <div class="verified">Verified Buyer</div>
+            </div>
+          </div>
+          <!-- comment of person -->
+          <div class="comment">
+            "Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"
+          </div>
+        </div>
+      </main>
+    </section>
+
+   
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Kittiphat Pisuittiporn</a>.
+    </div>
+  </body>
+</html>
